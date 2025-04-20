@@ -11,6 +11,14 @@ public class User {
 	private String userCity = null;
 	private String userEmailId = null;
 	private long userMobileNumber = 0;
+	private String role = "";
+	
+	public String getRole() {
+		return role;
+	}
+	public void setRole(String role) {
+		this.role = role;
+	}
 	public int getUserId() {
 		return userId;
 	}
@@ -66,7 +74,7 @@ public class User {
 		
 	}
 	public User(int userId, String userFirstName, String userLastName, String userName, String userPassword,
-			String userCity, String userEmailId, long userMobileNumber) {
+			String userCity, String userEmailId, long userMobileNumber,String role) {
 		super();
 		this.userId = userId;
 		this.userFirstName = userFirstName;
@@ -76,6 +84,7 @@ public class User {
 		this.userCity = userCity;
 		this.userEmailId = userEmailId;
 		this.userMobileNumber = userMobileNumber;
+		this.role=role;
 	}
 	
 }
